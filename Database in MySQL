@@ -1,0 +1,6 @@
+CREATE DATABASE library_db; USE library_db;
+CREATE TABLE books (
+id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(150) NOT NULL,
+author VARCHAR(100) NOT NULL, genre VARCHAR(50) NOT NULL,
+status ENUM('Available','Borrowed') NOT NULL
+);
